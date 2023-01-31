@@ -102,3 +102,12 @@ do
 	
 done
  
+ 
+ #CTracy comments: You are getting there! at the moment you are counting the total number of sequences in all the files added in the argument line
+ #Additionally, you are calling all the file names in the argument line
+ #What it should do is for each filename, get the number of sequences in that file and that file name and print that to a line, then at the end print the total number of sequences in all files provided
+ #I would suggest creating a variable for your grep output so you can call that in echo with the file name.
+ #You also need to change what is passed to grep and basename because the $@ is all arguments provided and not each filename individually
+ #Message me if you would like to meet so I can help you with this one on one!
+ 
+ 
